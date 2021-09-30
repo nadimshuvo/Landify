@@ -1,7 +1,6 @@
 .main-bg {
     background-image: url("assets/images/bg.png");
     height: 866px;
-    max-width: 1440px;
     margin: 0 auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,11 +10,10 @@
 
 .main {
     &_home {
-        position: absolute;
+        position: relative;
+        margin-top: 167px;
         width: 730px;
         height: 276px;
-        left: 165px;
-        top: 200px;
     }
     &_title {
         margin-bottom: 0;
@@ -34,9 +32,7 @@
     }
     /* Mobile Img */
     &_mobile-img {
-        position: absolute;
-        left: 925px;
-        top: 168px;
+        margin-top: 112px;
         animation: animateHeart 3s infinite;
     }
     @keyframes animateHeart {
