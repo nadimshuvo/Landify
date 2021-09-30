@@ -1,0 +1,55 @@
+.main-bg {
+    background-image: url("assets/images/bg.png");
+    background-color: #cccccc;
+    height: 866px;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.main {
+    &_home {
+        position: absolute;
+        width: 730px;
+        height: 276px;
+        left: 165px;
+        top: 200px;
+    }
+    &_title {
+        margin-bottom: 0;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 72px;
+        line-height: 98px;
+        /* or 136% */
+        font-feature-settings: 'salt' on, 'liga' off;
+        /* Text / Gray 900 */
+        color: #18191F;
+    }
+    &_title2 {
+        margin: 0 auto;
+    }
+    /* Mobile Img */
+    &_mobile-img {
+        position: absolute;
+        left: 925px;
+        top: 168px;
+        animation: animateHeart 3s infinite;
+    }
+    @keyframes animateHeart {
+        // scale down and scale up faster in irregular intervals to get the throbbing effect
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(0.9);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+}

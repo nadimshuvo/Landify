@@ -10,57 +10,66 @@
 
 <body>
     <section class="main-bg">
-        <header>
-            <nav>
-                <span class="nav">
-                    <!-- Landify Logo -->
-                    <div class="logo">
-                        <img src="assets/images/icons/Logo.svg" alt="Landify Logo">
-                    </div>
-                    <h2 class="logo-title">Landify</h2>
-                    <!-- Nav -->
-                    <ul>
-                        <li class="">About</li>
-                        <li class="">Products</li>
-                        <li class="">Pricing</li>
-                        <li class="">Blog</li>
-                        <li class="">Jobs</li>
-                        <!-- More Options -->
-                        <li class="">More
+        <div class="wrapper">
+            <header>
+                <nav class="nav">
+                    <span class="nav_left-side">
+                        <!-- Landify Logo -->
+                        <div class="nav_landify">
+                            <div class="nav_logo">
+                                <img src="assets/images/icons/Logo.svg" alt="Landify Logo">
+                            </div>
+                            <div class="nav_logo2">
+                                <img src="assets/images/icons/Landify.svg" alt="Landify Logo">
+                            </div>
+                        </div>
+                        <!-- Nav -->
+                        <div class="nav_options">
                             <ul>
-                                <li>Facebook</li>
-                                <li>Twitter</li>
-                                <li>LinkedIn</li>
+                                <li><a class="txt" href="#">About</a></li>
+                                <li><a class="txt" href="#">Products</a></li>
+                                <li><a class="txt" href="#">Pricing</a></li>
+                                <li><a class="txt" href="#">Blog</a></li>
+                                <li><a class="txt" href="#">Jobs</a></li>
+                                <!-- More Options -->
+                                <li><a class="txt" href="#">More &Or;</a>
+                                    <ul>
+                                        <li><a class="txt" href="#">Facebook</a></li>
+                                        <li><a class="txt" href="#">Twitter</a></li>
+                                        <li><a class="txt" href="#">LinkedIn</a></li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </li>
-                    </ul>
-                </span>
-                <!-- Store -->
-                <span class="nav_store">
-                    <div class="nav_google-store">
-                        <img src="assets/images/icons/playstore.svg" alt="Google Play Store">
-                    </div>
-                    <div class="nav_apple-store">
-                        <img src="assets/images/icons/applestore.svg" alt="Apple Store">
-                    </div>
-                </span>
-            </nav>
-        </header>
+                        </div>
+                    </span>
+                    <!-- Google, Apple Store logo -->
+                    <span class="nav_right-side">
+                        <div class="nav_google-store">
+                            <img src="assets/images/icons/playstore.svg" alt="Google Play Store">
+                        </div>
+                        <div class="nav_apple-store">
+                            <img src="assets/images/icons/applestore.svg" alt="Apple Store">
+                        </div>
+                    </span>
+                </nav>
+            </header>
+            <!-- Main Section Headline and Big Image -->
+            <main>
+                <section class="main_home">
+                    <h1 class="main_title">
+                        Organise projects.
+                    </h1>
+                    <h1 class="main_title main_title2">
+                        Get more done.
+                    </h1>
+                    <div class="btn"><a class="txt2" href="http://">Get Started</a></div>
+                </section>
+                <aside class="main_mobile-img">
+                    <img src="assets/images/icons/phn.png" alt="Mobile Image">
+                </aside>
+            </main>
+        </div>
     </section>
-    <main>
-        <section class="home">
-            <h1>
-                Organise projects.
-            </h1>
-            <h1>
-                Get more done.
-            </h1>
-            <a class="btn" href="http://">Get Started</a>
-        </section>
-        <aside class="home_mobile-img">
-            <img src="assets/images/icons/phn.png" alt="Mobile Image">
-        </aside>
-    </main>
 
     <!-- Google,Microsoft Etc Logos -->
     <section class="logo">
@@ -237,5 +246,6 @@
         </section>
     </footer>
 </body>
+<script src="bundled.js"></script>
 
 </html>

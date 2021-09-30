@@ -2,3 +2,6 @@
 @import 'base/_global.css';
 @import 'base/_mixins.css';
 @import 'modules/_wrapper.css';
+@import 'modules/_main.css';
+@import 'modules/_nav.css';
+@import 'modules/_btn-txt.css'
