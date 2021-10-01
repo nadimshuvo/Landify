@@ -13,4 +13,8 @@
         display: flex;
         justify-content: space-between;
     }
+    &_less {
+        width: 1110px;
+        margin: 0 auto;
+    }
 }

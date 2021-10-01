@@ -1,0 +1,15 @@
+.divider {
+    height: 1px;
+    background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+}
+
+.logo {
+    cursor: pointer;
+    max-width: 891px;
+    margin: 0 auto;
+    display: flex;
+    gap: 64px;
+    align-items: center;
+    padding: 16px 0px;
+    animation: animateHeart 10s infinite;
+}

@@ -4,6 +4,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 20px;
+    text-align: center;
     /* identical to box height, or 143% */
     font-feature-settings: 'salt' on, 'liga' off;
     /* Text / Gray 900 */
@@ -27,7 +28,7 @@
     border-radius: 6px;
     margin-top: 35px;
     transition: .2s linear;
-    animation: animateHeart .9s infinite;
+    animation: animateHeart 2s infinite;
     &:hover {
         background: black;
         pointer: cursor;
