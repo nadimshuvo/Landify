@@ -1,0 +1,147 @@
+.testimonials {
+    position: relative;
+    background: hsl(183, 87%, 91%);
+    height: 896px;
+    &_heading {
+        position: absolute;
+        max-width: 445px;
+        left: 260px;
+        top: 120px;
+        &_66-marks {
+            padding: 60px 165px;
+            opacity: 0.3;
+        }
+    }
+    &_h2 {
+        text-align: left;
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 64px;
+    }
+    &_p {
+        text-align: left;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+    }
+    /* <!-- Testimonial 1 --> */
+    &_1 {
+        position: absolute;
+        left: 355px;
+        top: 312px;
+        width: 350px;
+        height: 468px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+        border-radius: 8px;
+        &_logo {
+            padding: 32px 32px;
+        }
+        &_quote {
+            padding: 0 30px;
+        }
+        &>p {
+            text-align: left;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 32px;
+            max-width: 254px;
+            margin: -13px 50px 24px 61px;
+        }
+        &>h4 {
+            text-align: left;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 28px;
+            margin: 0px 50px 0px 61px;
+        }
+        &>h5 {
+            text-align: left;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: #969BAB;
+            margin: 0px 50px 0px 61px;
+        }
+    }
+    /* <!-- Testimonial 2 --> */
+    &_2 {
+        position: absolute;
+        width: 445px;
+        height: 340px;
+        left: 735px;
+        top: 168px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+        border-radius: 8px;
+        &_logo {
+            padding: 32px 32px;
+        }
+        &_quote {
+            padding: 0 30px;
+        }
+        &>p {
+            text-align: left;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 32px;
+            max-width: 349px;
+            margin: -13px 50px 24px 61px;
+        }
+        &>h4 {
+            text-align: left;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 28px;
+            margin: 0px 50px 0px 61px;
+        }
+        &>h5 {
+            text-align: left;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: #969BAB;
+            margin: 0px 50px 0px 61px;
+        }
+    }
+    /* <!-- Testimonial 3 --> */
+    &_3 {
+        position: absolute;
+        width: 350px;
+        height: 276px;
+        left: 735px;
+        top: 540px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+        border-radius: 8px;
+        &_logo {
+            padding: 32px 32px;
+        }
+        &_quote {
+            padding: 0 30px;
+        }
+        &>p {
+            text-align: left;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 32px;
+            max-width: 254px;
+            margin: -13px 32px 24px 64px
+        }
+        &>h4 {
+            text-align: left;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 28px;
+            margin: 0px 50px 0px 61px;
+        }
+        &>h5 {
+            text-align: left;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: #969BAB;
+            margin: 0px 50px 0px 61px;
+        }
+    }
+}
