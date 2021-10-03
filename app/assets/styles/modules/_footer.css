@@ -1,0 +1,84 @@
+/* Footer Element */
+
+footer {
+    background: #0B0D17;
+    height: 280px;
+}
+
+
+/* Footer Class Started */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    /* 2nd FlexBox */
+    &_left {
+        display: flex;
+        flex-direction: column;
+        /* Footer Logo  */
+        &_logo {
+            position: absolute;
+            margin-top: 56px;
+            animation: spin 3s linear infinite;
+        }
+        /* Download now, Licence */
+        &_Download {
+            margin-top: 112px;
+            &>a {
+                text-align: left;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FFFFFF;
+                &:nth-child(1) {
+                    padding-right: 24px;
+                }
+            }
+        }
+        /* About,Options... */
+        &_About {
+            padding-top: 12px;
+            &>a {
+                text-align: left;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FFFFFF;
+                /* About, Features,Pricing,Careers,Help */
+                &:nth-child(n) {
+                    padding-right: 24px;
+                }
+                /* Target "Privacy Policy" */
+                &:nth-last-child(1) {
+                    padding-right: 0px;
+                }
+            }
+        }
+        /* @copy 2021 */
+        &_copy {
+            padding-top: 24px;
+            &>p {
+                text-align: left;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 24px;
+                color: #D9DBE1;
+            }
+        }
+    }
+    /* <!-- FlexBox 2 - Footer Right Side --> */
+    &_right {
+        margin-right: 25px;
+        &>h3 {
+            margin-top: 56px;
+            text-align: left;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            color: #D9DBE1;
+        }
+        &>img:nth-child(n) {
+            padding-top: 16px;
+        }
+    }
+}

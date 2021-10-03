@@ -28,4 +28,9 @@
         gap: 30px;
         padding: 80px 165px;
     }
+    /* Manage projects */
+    &_projects {
+        display: flex;
+        position: relative;
+    }
 }

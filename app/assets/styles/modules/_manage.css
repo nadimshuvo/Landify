@@ -1,0 +1,49 @@
+.manage {
+    background: #2EC5CE;
+    height: 491px;
+    &_headline {
+        width: 540px;
+        height: 356px;
+        &>h2 {
+            padding-top: 68px;
+            text-align: left;
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 64px;
+        }
+        &>p {
+            padding-top: 8px;
+            text-align: left;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 32px;
+        }
+        &>h3 {
+            padding-top: 48px;
+            text-align: left;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            color: black;
+        }
+        &>span {
+            padding-top: 6px;
+            display: flex;
+            gap: 12px;
+        }
+    }
+    &_x {
+        display: flex;
+        &_1 {
+            position: relative;
+            padding-left: 53px;
+            animation: animateHeart 3s infinite;
+        }
+        &_2 {
+            position: absolute;
+            top: 73px;
+            right: -41px;
+            animation: animateHeart 3.5s infinite;
+        }
+    }
+}
