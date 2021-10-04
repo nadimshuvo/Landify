@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    animation: animateHeart linear 2s 1;
 }
 
 .main {
