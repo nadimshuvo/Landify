@@ -1,1 +1,1 @@
-console.log("Allahu Akbar"
+console.log("Allahu Akbar")
