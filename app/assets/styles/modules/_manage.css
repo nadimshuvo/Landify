@@ -1,49 +1,66 @@
 .manage {
-    background: #2EC5CE;
-    height: 491px;
+    @mixin atLarge {
+        background: #2EC5CE;
+        height: 491px;
+    }
     &_headline {
-        width: 540px;
-        height: 356px;
+        @mixin atLarge {
+            width: 540px;
+            height: 356px;
+        }
         &>h2 {
-            padding-top: 68px;
-            text-align: left;
-            font-weight: 800;
-            font-size: 48px;
-            line-height: 64px;
+            @mixin atLarge {
+                padding-top: 68px;
+                text-align: left;
+                font-weight: 800;
+                font-size: 48px;
+                line-height: 64px;
+                animation: animateHeart 3s linear 5s 5;
+            }
         }
         &>p {
-            padding-top: 8px;
-            text-align: left;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 32px;
+            @mixin atLarge {
+                padding-top: 8px;
+                text-align: left;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+            }
         }
         &>h3 {
-            padding-top: 48px;
-            text-align: left;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 28px;
-            color: black;
+            @mixin atLarge {
+                padding-top: 48px;
+                text-align: left;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                color: black;
+            }
         }
         &>span {
-            padding-top: 6px;
-            display: flex;
-            gap: 12px;
+            @mixin atLarge {
+                padding-top: 6px;
+                display: flex;
+                gap: 12px;
+            }
         }
     }
     &_x {
-        display: flex;
+        @mixin atLarge {
+            display: flex;
+        }
         &_1 {
-            position: relative;
-            padding-left: 53px;
-            animation: animateHeart 3s infinite;
+            @mixin atLarge {
+                position: relative;
+                padding-left: 53px;
+            }
         }
         &_2 {
-            position: absolute;
-            top: 73px;
-            right: -41px;
-            animation: animateHeart 3.5s infinite;
+            @mixin atLarge {
+                position: absolute;
+                top: 73px;
+                right: -41px;
+            }
         }
     }
 }

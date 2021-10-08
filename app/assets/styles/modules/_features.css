@@ -1,96 +1,203 @@
 .features {
-    display: grid;
+    @mixin atLarge {
+        display: grid;
+    }
     &_title {
-        max-width: 540px;
-        margin: auto;
-        margin-top: 64px;
-        margin-bottom: 48px;
+        @mixin atLarge {
+            max-width: 540px;
+            margin: auto;
+            margin-top: 64px;
+            margin-bottom: 48px;
+        }
     }
     &_heading {
-        font-weight: 800;
-        font-size: 48px;
-        line-height: 64px;
+        @mixin atLarge {
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 64px;
+        }
     }
     &_p {
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 32px;
+        @mixin atLarge {
+            text-align: center;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 32px;
+        }
     }
     &_inner {
-        margin-bottom: 64px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
-        grid-gap: 60px 30px;
-        &_span1 {
+        @mixin atLarge {
+            margin-bottom: 64px;
             display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+            grid-gap: 60px 30px;
+        }
+        &_span1 {
+            @mixin atLarge {
+                display: grid;
+            }
             &>img {
-                margin: auto;
+                @mixin atLarge {
+                    margin: auto;
+                }
             }
             &>h3 {
-                margin: auto;
+                @mixin atLarge {
+                    margin: auto;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 32px;
+                    padding-top: 24px;
+                    padding-bottom: 8px;
+                }
             }
             &>p {
-                margin: auto;
+                @mixin atLarge {
+                    margin: auto;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 26px;
+                }
             }
         }
         &_span2 {
-            display: grid;
+            @mixin atLarge {
+                display: grid;
+            }
             &>img {
-                margin: auto;
+                @mixin atLarge {
+                    margin: auto;
+                }
             }
             &>h3 {
-                margin: auto;
+                @mixin atLarge {
+                    margin: auto;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 32px;
+                    padding-top: 24px;
+                    padding-bottom: 8px;
+                }
             }
             &>p {
-                margin: auto;
+                @mixin atLarge {
+                    margin: auto;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 26px;
+                }
             }
         }
         &_span3 {
-            display: grid;
+            @mixin atLarge {
+                display: grid;
+            }
             &>img {
-                margin: auto;
+                @mixin atLarge {
+                    margin: auto;
+                }
             }
             &>h3 {
-                margin: auto;
+                @mixin atLarge {
+                    margin: auto;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 32px;
+                    padding-top: 24px;
+                    padding-bottom: 8px;
+                }
             }
             &>p {
-                margin: auto;
+                @mixin atLarge {
+                    margin: auto;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 26px;
+                }
             }
         }
         &_span4 {
-            display: grid;
+            @mixin atLarge {
+                display: grid;
+            }
             &>img {
-                margin: auto;
+                @mixin atLarge {
+                    margin: auto;
+                }
             }
             &>h3 {
-                margin: auto;
+                @mixin atLarge {
+                    margin: auto;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 32px;
+                    padding-top: 24px;
+                    padding-bottom: 8px;
+                }
             }
             &>p {
-                margin: auto;
+                @mixin atLarge {
+                    margin: auto;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 26px;
+                }
             }
         }
         &_span5 {
-            display: grid;
+            @mixin atLarge {
+                display: grid;
+            }
             &>img {
-                margin: auto;
+                @mixin atLarge {
+                    margin: auto;
+                }
             }
             &>h3 {
-                margin: auto;
+                @mixin atLarge {
+                    margin: auto;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 32px;
+                    padding-top: 24px;
+                    padding-bottom: 8px;
+                }
             }
             &>p {
-                margin: auto;
+                @mixin atLarge {
+                    margin: auto;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 26px;
+                }
             }
         }
         &_span6 {
-            display: grid;
+            @mixin atLarge {
+                display: grid;
+            }
             &>img {
-                margin: auto;
+                @mixin atLarge {
+                    margin: auto;
+                }
             }
             &>h3 {
-                margin: auto;
+                @mixin atLarge {
+                    margin: auto;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 32px;
+                    padding-top: 24px;
+                    padding-bottom: 8px;
+                }
             }
             &>p {
-                margin: auto;
+                @mixin atLarge {
+                    margin: auto;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 26px;
+                }
             }
         }
     }

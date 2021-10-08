@@ -1,5 +1,6 @@
 .wrapper {
     @mixin atLarge {
+        overflow: hidden;
         padding-left: 18px;
         padding-right: 18px;
         max-width: 1130px;
@@ -7,30 +8,40 @@
         margin-right: auto;
     }
     &_main {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        justify-content: space-between;
+        @mixin atLarge {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-between;
+        }
     }
     &_less {
-        width: 1110px;
-        margin: 0 auto;
+        @mixin atLarge {
+            width: 1110px;
+            margin: 0 auto;
+        }
     }
     &_wide {
-        position: relative;
-        max-width: 1440px;
-        margin-left: auto;
-        margin-right: auto;
+        @mixin atLarge {
+            position: relative;
+            max-width: 1440px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
     &_stats {
-        display: flex;
-        gap: 30px;
-        padding: 80px 165px;
+        @mixin atLarge {
+            display: flex;
+            gap: 30px;
+            padding: 80px 165px;
+        }
     }
     /* Manage projects */
     &_projects {
-        display: flex;
-        position: relative;
+        @mixin atLarge {
+            display: flex;
+            position: relative;
+        }
     }
 }

@@ -1,40 +1,51 @@
 .main-bg {
-    background-image: url("assets/images/bg.png");
-    height: 866px;
-    margin: 0 auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    animation: animateHeart linear 2s 1;
+    @mixin atLarge {
+        background-image: url("assets/images/bg.png");
+        height: 866px;
+        margin: 0 auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        animation: animateHeart 2s linear 0s 1;
+        animation-direction: alternate;
+    }
 }
 
 .main {
     &_home {
-        position: relative;
-        margin-top: 167px;
-        width: 730px;
-        height: 276px;
+        @mixin atLarge {
+            position: relative;
+            margin-top: 167px;
+            width: 730px;
+            height: 276px;
+        }
     }
     &_title {
-        margin-bottom: 0;
-        font-family: Inter;
-        font-style: normal;
-        font-weight: 800;
-        font-size: 72px;
-        line-height: 98px;
-        /* or 136% */
-        font-feature-settings: 'salt' on, 'liga' off;
-        /* Text / Gray 900 */
-        color: #18191F;
+        @mixin atLarge {
+            margin-bottom: 0;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 72px;
+            line-height: 98px;
+            /* or 136% */
+            font-feature-settings: 'salt' on, 'liga' off;
+            /* Text / Gray 900 */
+            color: #18191F;
+        }
     }
     &_title2 {
-        margin: 0 auto;
+        @mixin atLarge {
+            margin: 0 auto;
+        }
     }
     /* Mobile Img */
     &_mobile-img {
-        margin-top: 112px;
-        animation: animateHeart 3s infinite;
+        @mixin atLarge {
+            margin-top: 112px;
+            animation: animateHeart 3s infinite;
+        }
     }
     @keyframes animateHeart {
         // scale down and scale up faster in irregular intervals to get the throbbing effect

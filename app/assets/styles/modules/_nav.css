@@ -1,27 +1,40 @@
-    .nav {
+.nav {
+    @mixin atLarge {
         display: flex;
         justify-content: space-between;
         padding-top: 20px;
-        /* Nav Left Side Start */
-        &_left-side {
+    }
+    /* Nav Left Side Start */
+    &_left-side {
+        @mixin atLarge {
             display: flex;
             justify-content: space-between;
         }
-        &_landify {
+    }
+    &_landify {
+        @mixin atLarge {
             display: flex;
         }
-        &_logo2 {
+    }
+    &_logo2 {
+        @mixin atLarge {
             margin-top: 6px;
             margin-left: 35px;
         }
-        /* Navigation Options Modification */
-        &_options {
+    }
+    /* Navigation Options Modification */
+    &_options {
+        @mixin atLarge {
             margin-left: 17px;
             margin-top: 3px;
-            & ul {
+        }
+        & ul {
+            @mixin atLarge {
                 list-style: none;
             }
-            & ul li {
+        }
+        & ul li {
+            @mixin atLarge {
                 height: 20px;
                 width: 80px;
                 text-align: center;
@@ -30,55 +43,76 @@
                 position: relative;
                 transition: .3s linear;
             }
-            & ul li:hover {
+        }
+        & ul li:hover {
+            @mixin atLarge {
                 transform: scale(1.1);
                 color: black;
                 border-bottom: 1px solid rgb(233, 233, 233);
             }
-            & ul ul {
+        }
+        & ul ul {
+            @mixin atLarge {
                 display: none;
             }
-            & ul li:hover>ul {
+        }
+        & ul li:hover>ul {
+            @mixin atLarge {
                 display: block;
                 margin-top: 0px;
             }
         }
-        /* --- Nav Left Side EnD --- */
-        /* /* Nav Right Side Start */
-        &_right-side {
+    }
+    /* --- Nav Left Side EnD --- */
+    /* /* Nav Right Side Start */
+    &_right-side {
+        @mixin atLarge {
             display: flex;
             gap: 11px;
         }
-        &_google-store {
+    }
+    &_google-store {
+        @mixin atLarge {
             cursor: pointer;
             transition: .3s linear;
-            &:hover {
-                transform: scale(1.1);
-            }
         }
-        &_apple-store {
-            cursor: pointer;
-            transition: .3s linear;
-            &:hover {
+        &:hover {
+            @mixin atLarge {
                 transform: scale(1.1);
             }
         }
     }
-    /* Animation for Logo spin */
-    
-    .nav_logo {
+    &_apple-store {
+        @mixin atLarge {
+            cursor: pointer;
+            transition: .3s linear;
+        }
+        &:hover {
+            @mixin atLarge {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
+/* Animation for Logo spin */
+
+.nav_logo {
+    @mixin atLarge {
         position: absolute;
         animation-name: spin;
         animation-duration: 3s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
-    
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
     }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,125 +1,167 @@
 .stats {
-    height: 332px;
-    margin-left: auto;
-    margin-right: auto;
-    &_headline {
-        width: 540px;
-        height: 128px;
+    @mixin atLarge {
+        height: 332px;
         margin-left: auto;
         margin-right: auto;
+    }
+    &_headline {
+        @mixin atLarge {
+            width: 540px;
+            height: 128px;
+            margin-left: auto;
+            margin-right: auto;
+        }
         &>h2 {
-            font-weight: 800;
-            font-size: 48px;
-            line-height: 64px;
-            text-align: left;
+            @mixin atLarge {
+                font-weight: 800;
+                font-size: 48px;
+                line-height: 64px;
+                text-align: left;
+            }
         }
         &>p {
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 32px;
-            text-align: left;
+            @mixin atLarge {
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 32px;
+                text-align: left;
+            }
         }
     }
     &_survey {
-        width: 540px;
-        height: 172px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 30px 30px;
+        @mixin atLarge {
+            width: 540px;
+            height: 172px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 30px 30px;
+        }
         /* <!-- Survey 1 --> */
         &_1 {
-            display: flex;
-            gap: 16px;
+            @mixin atLarge {
+                display: flex;
+                gap: 16px;
+            }
             /* stats_survey_1_logo FlexBox 1 */
             &_logo {
-                padding-top: 17px;
+                @mixin atLarge {
+                    padding-top: 17px;
+                }
             }
             /* stats_survey_1_headline FlexBox 2 */
             &_headline {
                 &>h2 {
-                    text-align: left;
-                    font-weight: bold;
-                    font-size: 28px;
-                    line-height: 40px;
+                    @mixin atLarge {
+                        text-align: left;
+                        font-weight: bold;
+                        font-size: 28px;
+                        line-height: 40px;
+                    }
                 }
                 &>p {
-                    text-align: left;
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 26px;
+                    @mixin atLarge {
+                        text-align: left;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
                 }
             }
         }
         /* <!-- Survey 2 --> */
         &_2 {
-            display: flex;
-            gap: 16px;
+            @mixin atLarge {
+                display: flex;
+                gap: 16px;
+            }
             /* stats_survey_1_logo FlexBox 1 */
             &_logo {
-                padding-top: 17px;
+                @mixin atLarge {
+                    padding-top: 17px;
+                }
             }
             /* stats_survey_1_headline FlexBox 2 */
             &_headline {
                 &>h2 {
-                    text-align: left;
-                    font-weight: bold;
-                    font-size: 28px;
-                    line-height: 40px;
+                    @mixin atLarge {
+                        text-align: left;
+                        font-weight: bold;
+                        font-size: 28px;
+                        line-height: 40px;
+                    }
                 }
                 &>p {
-                    text-align: left;
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 26px;
+                    @mixin atLarge {
+                        text-align: left;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
                 }
             }
         }
         /* <!-- Survey 3 --> */
         &_3 {
-            display: flex;
-            gap: 16px;
+            @mixin atLarge {
+                display: flex;
+                gap: 16px;
+            }
             /* stats_survey_1_logo FlexBox 1 */
             &_logo {
-                padding-top: 17px;
+                @mixin atLarge {
+                    padding-top: 17px;
+                }
             }
             /* stats_survey_1_headline FlexBox 2 */
             &_headline {
                 &>h2 {
-                    text-align: left;
-                    font-weight: bold;
-                    font-size: 28px;
-                    line-height: 40px;
+                    @mixin atLarge {
+                        text-align: left;
+                        font-weight: bold;
+                        font-size: 28px;
+                        line-height: 40px;
+                    }
                 }
                 &>p {
-                    text-align: left;
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 26px;
+                    @mixin atLarge {
+                        text-align: left;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
                 }
             }
         }
         /* <!-- Survey 4 --> */
         &_4 {
-            display: flex;
-            gap: 16px;
+            @mixin atLarge {
+                display: flex;
+                gap: 16px;
+            }
             /* stats_survey_1_logo FlexBox 1 */
             &_logo {
-                padding-top: 17px;
+                @mixin atLarge {
+                    padding-top: 17px;
+                }
             }
             /* stats_survey_1_headline FlexBox 2 */
             &_headline {
                 &>h2 {
-                    text-align: left;
-                    font-weight: bold;
-                    font-size: 28px;
-                    line-height: 40px;
+                    @mixin atLarge {
+                        text-align: left;
+                        font-weight: bold;
+                        font-size: 28px;
+                        line-height: 40px;
+                    }
                 }
                 &>p {
-                    text-align: left;
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 26px;
+                    @mixin atLarge {
+                        text-align: left;
+                        font-weight: normal;
+                        font-size: 16px;
+                        line-height: 26px;
+                    }
                 }
             }
         }
