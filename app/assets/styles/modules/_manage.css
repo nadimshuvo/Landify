@@ -1,44 +1,82 @@
 .manage {
+    background: #2EC5CE;
+    margin-top: 35px;
     @mixin atLarge {
-        background: #2EC5CE;
+        margin-top: 0;
         height: 491px;
     }
     &_headline {
+        @media (max-width: 529px) {
+            width: 360px;
+            margin: 0 auto;
+        }
+        @media (min-width: 530px) and (max-width: 1199px) {
+            width: 510px;
+            margin: 0 auto;
+        }
         @mixin atLarge {
             width: 540px;
             height: 356px;
         }
         &>h2 {
+            margin-top: 17px;
+            margin-bottom: 17px;
+            font-weight: 800;
+            font-size: 29px;
+            line-height: 29px;
+            @mixin atMedium {
+                font-size: 37px;
+                line-height: 45px;
+            }
             @mixin atLarge {
                 padding-top: 68px;
+                margin-bottom: 0;
+                margin-top: 0;
                 text-align: left;
-                font-weight: 800;
                 font-size: 48px;
                 line-height: 64px;
                 animation: animateHeart 3s linear 5s 5;
             }
         }
         &>p {
+            font-weight: normal;
+            font-size: 18px;
+            padding-bottom: 25px;
+            @mixin atMedium {
+                max-width: 721px;
+                margin: 0 auto;
+            }
             @mixin atLarge {
+                padding-bottom: 0;
+                max-width: auto;
                 padding-top: 8px;
                 text-align: left;
-                font-weight: normal;
                 font-size: 18px;
                 line-height: 32px;
             }
         }
         &>h3 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            color: rgb(101, 5, 255);
             @mixin atLarge {
                 padding-top: 48px;
                 text-align: left;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 28px;
                 color: black;
             }
         }
         &>span {
+            @media (max-width: 1199px) {
+                display: flex;
+                max-width: 280px;
+                justify-content: space-between;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 25px;
+            }
             @mixin atLarge {
+                padding-bottom: 0;
                 padding-top: 6px;
                 display: flex;
                 gap: 12px;
@@ -46,16 +84,33 @@
         }
     }
     &_x {
+        @media (max-width: 584px) {
+            max-width: 584px;
+            margin: 0 auto;
+        }
+        @media (max-width: 1199px) {
+            display: flex;
+            max-width: 584px;
+            margin: 0 auto;
+        }
         @mixin atLarge {
             display: flex;
         }
         &_1 {
+            @media (max-width: 584px) {
+                width: 49%;
+                margin: 0 auto;
+            }
             @mixin atLarge {
                 position: relative;
                 padding-left: 53px;
             }
         }
         &_2 {
+            @media (max-width: 584px) {
+                width: 49%;
+                margin: 0 auto;
+            }
             @mixin atLarge {
                 position: absolute;
                 top: 73px;

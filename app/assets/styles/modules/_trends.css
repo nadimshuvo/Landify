@@ -3,34 +3,57 @@
         height: 704px;
     }
     &_head {
+        @mixin atMedium {
+            margin: 25px;
+        }
         @mixin atLarge {
+            margin: 0;
             display: flex;
             gap: 30px;
             padding: 64px 165px 48px 165px;
         }
         &>h2 {
+            margin-bottom: 17px;
+            font-weight: 800;
+            font-size: 29px;
+            line-height: 25px;
+            @mixin atMedium {
+                font-size: 40px;
+            }
             @mixin atLarge {
+                margin-bottom: 0;
                 text-align: left;
                 width: 540px;
                 height: 108px;
-                font-weight: 800;
                 font-size: 40px;
                 line-height: 54px;
             }
         }
         &>p {
+            width: 360px;
+            height: 115px;
+            margin: 0 auto;
+            font-weight: normal;
+            font-size: 18px;
+            @mixin atMedium {
+                height: 85px;
+            }
             @mixin atLarge {
+                margin: 0;
                 text-align: left;
                 width: 540px;
                 height: 128px;
-                font-weight: normal;
-                font-size: 18px;
                 line-height: 32px;
             }
         }
     }
     /* trends_img */
     &_img {
+        &>img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
         @mixin atLarge {
             padding: 0 165px 64px 165px;
         }

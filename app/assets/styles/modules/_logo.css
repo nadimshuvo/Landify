@@ -1,19 +1,53 @@
-.divider {
-    @mixin atLarge {
-        height: 1px;
-        background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
-    }
-}
-
 .logo {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 16px 0px;
+    cursor: pointer;
+    align-items: center;
+    animation: animateHeart 10s infinite;
     @mixin atLarge {
-        cursor: pointer;
         max-width: 891px;
         margin: 0 auto;
-        display: flex;
         gap: 64px;
-        align-items: center;
-        padding: 16px 0px;
-        animation: animateHeart 10s infinite;
+    }
+    @media (max-width: 529px) {
+        &_airbnb>img {
+            width: 75%;
+        }
+        &_hubspot>img {
+            width: 75%;
+        }
+        &_google>img {
+            width: 75%;
+        }
+        &_microsoft>img {
+            width: 75%;
+        }
+        &_walmart>img {
+            width: 75%;
+        }
+        &_fedex>img {
+            width: 75%;
+        }
+    }
+    @media (min-width:530px) and (max-width: 767px) {
+        &_airbnb>img {
+            width: 85%;
+        }
+        &_hubspot>img {
+            width: 85%;
+        }
+        &_google>img {
+            width: 85%;
+        }
+        &_microsoft>img {
+            width: 85%;
+        }
+        &_walmart>img {
+            width: 85%;
+        }
+        &_fedex>img {
+            width: 85%;
+        }
     }
 }

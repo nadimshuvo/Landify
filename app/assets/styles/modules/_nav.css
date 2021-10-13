@@ -1,64 +1,81 @@
 .nav {
-    @mixin atLarge {
+    @mixin atMedium {
         display: flex;
         justify-content: space-between;
+        margin-top: 16px;
+    }
+    @mixin atLarge {
         padding-top: 20px;
     }
     /* Nav Left Side Start */
     &_left-side {
-        @mixin atLarge {
+        @mixin atMedium {
             display: flex;
             justify-content: space-between;
+            gap: 41px;
+        }
+        @mixin atLarge {
+            gap: 32px;
         }
     }
     &_landify {
-        @mixin atLarge {
-            display: flex;
+        display: flex;
+        padding-top: 10px;
+        @mixin atMedium {
+            padding-top: 0;
         }
     }
     &_logo2 {
+        padding-top: 6px;
+        padding-left: 5px;
         @mixin atLarge {
             margin-top: 6px;
             margin-left: 35px;
+            padding-top: 0;
+            padding-left: 0;
         }
     }
     /* Navigation Options Modification */
     &_options {
+        padding-left: 17px;
+        padding-top: 6px;
         @mixin atLarge {
-            margin-left: 17px;
-            margin-top: 3px;
+            margin-top: 5px;
+            padding-left: 0;
+            padding-top: 0;
         }
         & ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
             @mixin atLarge {
-                list-style: none;
+                gap: 32px;
             }
         }
         & ul li {
-            @mixin atLarge {
-                height: 20px;
-                width: 80px;
-                text-align: center;
-                float: left;
-                color: #fff;
-                position: relative;
-                transition: .3s linear;
-            }
+            /* height: 20px;
+            width: 80px; */
+            text-align: center;
+            color: #fff;
+            position: relative;
+            transition: .3s linear;
+            @mixin atLarge {}
         }
         & ul li:hover {
-            @mixin atLarge {
-                transform: scale(1.1);
-                color: black;
-                border-bottom: 1px solid rgb(233, 233, 233);
-            }
+            transform: scale(1.1);
+            color: black;
+            border-bottom: 1px solid rgb(233, 233, 233);
+            @mixin atLarge {}
         }
         & ul ul {
-            @mixin atLarge {
-                display: none;
-            }
+            display: none;
+            position: absolute;
+            @mixin atLarge {}
         }
         & ul li:hover>ul {
+            display: block;
+            margin-top: 0px;
             @mixin atLarge {
-                display: block;
                 margin-top: 0px;
             }
         }
@@ -66,31 +83,31 @@
     /* --- Nav Left Side EnD --- */
     /* /* Nav Right Side Start */
     &_right-side {
+        position: absolute;
+        opacity: 0;
+        z-index: -11;
+        @mixin atMedium {
+            position: relative;
+            opacity: 1;
+            z-index: 1;
+        }
         @mixin atLarge {
             display: flex;
             gap: 11px;
         }
     }
     &_google-store {
-        @mixin atLarge {
-            cursor: pointer;
-            transition: .3s linear;
-        }
+        cursor: pointer;
+        transition: .3s linear;
         &:hover {
-            @mixin atLarge {
-                transform: scale(1.1);
-            }
+            transform: scale(1.1);
         }
     }
     &_apple-store {
-        @mixin atLarge {
-            cursor: pointer;
-            transition: .3s linear;
-        }
+        cursor: pointer;
+        transition: .3s linear;
         &:hover {
-            @mixin atLarge {
-                transform: scale(1.1);
-            }
+            transform: scale(1.1);
         }
     }
 }

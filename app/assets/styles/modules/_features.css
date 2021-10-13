@@ -1,203 +1,206 @@
 .features {
+    margin-bottom: 65px;
     @mixin atLarge {
-        display: grid;
+        margin-bottom: 0;
     }
     &_title {
-        @mixin atLarge {
-            max-width: 540px;
-            margin: auto;
-            margin-top: 64px;
-            margin-bottom: 48px;
-        }
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 64px;
+        margin-bottom: 48px;
     }
     &_heading {
-        @mixin atLarge {
-            font-weight: 800;
+        font-weight: 800;
+        font-size: 25px;
+        line-height: 43px;
+        @mixin atSmall {
+            font-size: 31px;
+            line-height: 61px;
+        }
+        @mixin atMedium {
             font-size: 48px;
-            line-height: 64px;
+            line-height: 67px;
         }
     }
     &_p {
-        @mixin atLarge {
-            text-align: center;
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 32px;
+        max-width: 421px;
+        text-align: center;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 32px;
+        @mixin atMedium {
+            max-width: 768px;
         }
     }
     &_inner {
-        @mixin atLarge {
-            margin-bottom: 64px;
+        @mixin atMedium {
+            margin: auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+            grid-template-columns: repeat(2, 350px);
             grid-gap: 60px 30px;
         }
+        @mixin atLarge {
+            margin-bottom: 64px;
+            grid-template-columns: repeat(3, 350px);
+        }
         &_span1 {
-            @mixin atLarge {
-                display: grid;
-            }
+            display: grid;
+            @mixin atLarge {}
             &>img {
-                @mixin atLarge {
-                    margin: auto;
-                }
+                margin: auto;
+                @mixin atLarge {}
             }
             &>h3 {
-                @mixin atLarge {
-                    margin: auto;
-                    font-weight: 600;
-                    font-size: 24px;
-                    line-height: 32px;
-                    padding-top: 24px;
-                    padding-bottom: 8px;
-                }
+                margin: auto;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                padding-top: 24px;
+                padding-bottom: 8px;
+                @mixin atLarge {}
             }
             &>p {
-                @mixin atLarge {
-                    margin: auto;
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 26px;
-                }
+                margin: auto;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+                @mixin atLarge {}
             }
         }
         &_span2 {
-            @mixin atLarge {
-                display: grid;
+            display: grid;
+            margin-top: 37px;
+            @mixin atMedium {
+                margin-top: 0;
             }
             &>img {
-                @mixin atLarge {
-                    margin: auto;
-                }
+                margin: auto;
+                @mixin atLarge {}
             }
             &>h3 {
-                @mixin atLarge {
-                    margin: auto;
-                    font-weight: 600;
-                    font-size: 24px;
-                    line-height: 32px;
-                    padding-top: 24px;
-                    padding-bottom: 8px;
-                }
+                margin: auto;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                padding-top: 24px;
+                padding-bottom: 8px;
+                @mixin atLarge {}
             }
             &>p {
-                @mixin atLarge {
-                    margin: auto;
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 26px;
-                }
+                margin: auto;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+                @mixin atLarge {}
             }
         }
         &_span3 {
-            @mixin atLarge {
-                display: grid;
+            display: grid;
+            margin-top: 37px;
+            @mixin atMedium {
+                margin-top: 0;
             }
             &>img {
-                @mixin atLarge {
-                    margin: auto;
-                }
+                margin: auto;
+                @mixin atLarge {}
             }
             &>h3 {
-                @mixin atLarge {
-                    margin: auto;
-                    font-weight: 600;
-                    font-size: 24px;
-                    line-height: 32px;
-                    padding-top: 24px;
-                    padding-bottom: 8px;
-                }
+                margin: auto;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                padding-top: 24px;
+                padding-bottom: 8px;
+                @mixin atLarge {}
             }
             &>p {
-                @mixin atLarge {
-                    margin: auto;
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 26px;
-                }
+                margin: auto;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+                @mixin atLarge {}
             }
         }
         &_span4 {
-            @mixin atLarge {
-                display: grid;
+            display: grid;
+            margin-top: 37px;
+            @mixin atMedium {
+                margin-top: 0;
             }
             &>img {
-                @mixin atLarge {
-                    margin: auto;
-                }
+                margin: auto;
+                @mixin atLarge {}
             }
             &>h3 {
-                @mixin atLarge {
-                    margin: auto;
-                    font-weight: 600;
-                    font-size: 24px;
-                    line-height: 32px;
-                    padding-top: 24px;
-                    padding-bottom: 8px;
-                }
+                margin: auto;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                padding-top: 24px;
+                padding-bottom: 8px;
+                @mixin atLarge {}
             }
             &>p {
-                @mixin atLarge {
-                    margin: auto;
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 26px;
-                }
+                margin: auto;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+                @mixin atLarge {}
             }
         }
         &_span5 {
-            @mixin atLarge {
-                display: grid;
+            display: grid;
+            margin-top: 37px;
+            @mixin atMedium {
+                margin-top: 0;
             }
             &>img {
-                @mixin atLarge {
-                    margin: auto;
-                }
+                margin: auto;
+                @mixin atLarge {}
             }
             &>h3 {
-                @mixin atLarge {
-                    margin: auto;
-                    font-weight: 600;
-                    font-size: 24px;
-                    line-height: 32px;
-                    padding-top: 24px;
-                    padding-bottom: 8px;
-                }
+                margin: auto;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                padding-top: 24px;
+                padding-bottom: 8px;
+                @mixin atLarge {}
             }
             &>p {
-                @mixin atLarge {
-                    margin: auto;
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 26px;
-                }
+                margin: auto;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+                @mixin atLarge {}
             }
         }
         &_span6 {
-            @mixin atLarge {
-                display: grid;
+            display: grid;
+            margin-top: 37px;
+            @mixin atMedium {
+                margin-top: 0;
             }
             &>img {
-                @mixin atLarge {
-                    margin: auto;
-                }
+                margin: auto;
+                @mixin atLarge {}
             }
             &>h3 {
-                @mixin atLarge {
-                    margin: auto;
-                    font-weight: 600;
-                    font-size: 24px;
-                    line-height: 32px;
-                    padding-top: 24px;
-                    padding-bottom: 8px;
-                }
+                margin: auto;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+                padding-top: 24px;
+                padding-bottom: 8px;
+                @mixin atLarge {}
             }
             &>p {
-                @mixin atLarge {
-                    margin: auto;
-                    font-weight: normal;
-                    font-size: 16px;
-                    line-height: 26px;
-                }
+                margin: auto;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+                @mixin atLarge {}
             }
         }
     }

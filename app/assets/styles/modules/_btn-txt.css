@@ -1,45 +1,49 @@
 .txt {
-    @mixin atLarge {
-        font-family: 'Inter', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
-        text-align: center;
-        /* identical to box height, or 143% */
-        font-feature-settings: 'salt' on, 'liga' off;
-        /* Text / Gray 900 */
-        color: #18191F;
-    }
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    /* identical to box height, or 143% */
+    font-feature-settings: 'salt' on, 'liga' off;
+    /* Text / Gray 900 */
+    color: #18191F;
 }
 
 .txt2 {
+    margin: auto;
+    font-weight: 500;
+    color: #fff;
+    font-size: 13px;
+    line-height: 30px;
+    letter-spacing: 1px;
     @mixin atLarge {
-        font-weight: 500;
-        margin: auto;
-        color: #fff;
         font-size: 18px;
-        line-height: 30px;
-        letter-spacing: 1px;
     }
 }
 
 .btn {
+    display: grid;
+    width: 112px;
+    height: 35px;
+    background: #8C30F5;
+    border-radius: 6px;
+    margin-top: 51px;
+    transition: .2s linear;
+    animation: animateHeart 2s infinite;
     @mixin atLarge {
-        display: grid;
         width: 154px;
         height: 48px;
-        background: #8C30F5;
-        border-radius: 6px;
-        margin-top: 35px;
-        transition: .2s linear;
-        animation: animateHeart 2s infinite;
     }
     &:hover {
         @mixin atLarge {
-            background: black;
+            background: #00008b;
             pointer: cursor;
-            transform: scale(1.1);
         }
     }
+}
+
+.divider {
+    height: 1px;
+    background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
 }

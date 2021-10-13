@@ -1,6 +1,11 @@
 .wrapper {
+    padding-left: 18px;
+    padding-right: 18px;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
     @mixin atLarge {
-        overflow: hidden;
         padding-left: 18px;
         padding-right: 18px;
         max-width: 1130px;
@@ -8,34 +13,55 @@
         margin-right: auto;
     }
     &_main {
+        display: flex;
+        @mixin atMedium {
+            justify-content: space-between;
+        }
         @mixin atLarge {
+            margin-top: 0;
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
-            display: flex;
-            justify-content: space-between;
         }
     }
     &_less {
+        display: grid;
+        /* overflow: hidden; */
         @mixin atLarge {
             width: 1110px;
             margin: 0 auto;
         }
     }
     &_wide {
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        @mixin atSmall {
+            max-width: 530px;
+        }
         @mixin atLarge {
             position: relative;
             max-width: 1440px;
-            margin-left: auto;
-            margin-right: auto;
         }
     }
     &_stats {
+        @media (min-width: 530px) and (max-width: 1199px) {
+            max-width: 530px;
+            overflow: hidden;
+        }
         @mixin atLarge {
             display: flex;
             gap: 30px;
             padding: 80px 165px;
+            overflow: hidden;
         }
+    }
+    /* Fashion Trends */
+    &_trends {
+        position: relative;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
     }
     /* Manage projects */
     &_projects {

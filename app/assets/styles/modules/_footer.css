@@ -11,15 +11,19 @@ footer {
 /* Footer Class Started */
 
 .footer {
+    margin-top: 17px;
     @mixin atLarge {
+        margin-top: 0;
         display: flex;
         justify-content: space-between;
     }
     /* 2nd FlexBox */
     &_left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         @mixin atLarge {
-            display: flex;
-            flex-direction: column;
+            align-items: flex-start;
         }
         /* Footer Logo  */
         &_logo {
@@ -92,11 +96,13 @@ footer {
     }
     /* <!-- FlexBox 2 - Footer Right Side --> */
     &_right {
-        @mixin atLarge {
-            margin-right: 25px;
-        }
+        @mixin atLarge {}
         &>h3 {
+            padding-top: 10px;
+            font-weight: 900;
+            font-size: 19px;
             @mixin atLarge {
+                padding-top: 0;
                 margin-top: 56px;
                 text-align: left;
                 font-weight: 500;
@@ -105,10 +111,14 @@ footer {
                 color: #D9DBE1;
             }
         }
-        &>img:nth-child(n) {
-            @mixin atLarge {
-                padding-top: 16px;
-            }
+        &>span {
+            display: flex;
+            max-width: 280px;
+            justify-content: space-between;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 16px;
+            padding-bottom: 25px;
         }
     }
 }
