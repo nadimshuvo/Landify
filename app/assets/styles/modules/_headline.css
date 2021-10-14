@@ -32,8 +32,12 @@
         }
         &>h2 {
             font-weight: 800;
-            font-size: 40px;
-            line-height: 54px;
+            font-size: 25px;
+            line-height: 29px;
+            @mixin atSmall {
+                font-size: 40px;
+                line-height: 54px;
+            }
             @media (min-width: 1200px) and (max-width: 1350px) {
                 padding-top: 143px !important;
             }

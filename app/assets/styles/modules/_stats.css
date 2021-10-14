@@ -17,9 +17,13 @@
         }
         &>h2 {
             font-weight: 800;
-            font-size: 40px;
-            line-height: 39px;
+            font-size: 25px;
+            line-height: 29px;
             padding-bottom: 11px;
+            @mixin atSmall {
+                font-size: 40px;
+                line-height: 39px;
+            }
             @mixin atLarge {
                 font-size: 48px;
                 line-height: 64px;

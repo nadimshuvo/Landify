@@ -28,12 +28,14 @@
     &_title {
         font-style: normal;
         font-weight: 800;
-        font-size: 35px;
-        line-height: 19px;
-        /* or 136% */
+        font-size: 23px;
+        line-height: 11px;
         font-feature-settings: 'salt' on, 'liga' off;
-        /* Text / Gray 900 */
         color: #18191F;
+        @mixin atSmall {
+            font-size: 35px;
+            line-height: 19px;
+        }
         @mixin atMedium {
             font-size: 43px;
         }
