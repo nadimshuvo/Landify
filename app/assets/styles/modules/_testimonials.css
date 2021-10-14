@@ -1,303 +1,303 @@
-    .testimonials {
-        background: hsl(183, 87%, 91%);
-        position: relative;
-        height: 1315px;
+.testimonials {
+    background: hsl(183, 87%, 91%);
+    position: relative;
+    height: 1315px;
+    @mixin atSmall {
+        height: 1425px;
+    }
+    @mixin atLarge {
+        height: 896px;
+    }
+    &_heading {
+        @media (max-width: 529px) {
+            position: absolute;
+            max-width: 278px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 55px;
+            padding-left: 12px;
+        }
         @mixin atSmall {
-            height: 1425px;
+            max-width: 411px;
+            top: 78px;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
         }
+        @mixin atMedium {}
         @mixin atLarge {
-            height: 896px;
+            position: absolute;
+            margin: 0;
+            max-width: 445px;
+            left: 260px;
+            top: 120px;
         }
-        &_heading {
-            @media (max-width: 529px) {
-                position: absolute;
-                max-width: 278px;
-                margin: auto;
-                left: 0;
-                right: 0;
-                top: 55px;
-                padding-left: 12px;
-            }
+        &_66-marks {
+            opacity: 0.3;
+            padding: 37px 0px;
             @mixin atSmall {
-                max-width: 411px;
-                top: 78px;
-                position: absolute;
-                margin: auto;
-                left: 0;
-                right: 0;
-            }
-            @mixin atMedium {}
-            @mixin atLarge {
-                position: absolute;
-                margin: 0;
-                max-width: 445px;
-                left: 260px;
-                top: 120px;
-            }
-            &_66-marks {
-                opacity: 0.3;
-                padding: 37px 0px;
-                @mixin atSmall {
-                    padding: 41px 32px;
-                }
-                @mixin atMedium {
-                    padding: 38px 0px;
-                }
-                @mixin atLarge {
-                    padding: 60px 165px;
-                }
-                &>img {
-                    width: 58px;
-                    height: auto;
-                    @mixin atSmall {
-                        width: 95px;
-                    }
-                    @mixin atMedium {}
-                    @mixin atLarge {
-                        width: auto;
-                    }
-                }
-            }
-        }
-        &_h2 {
-            text-align: left;
-            font-weight: 800;
-            font-size: 31px;
-            line-height: 35px;
-            @mixin atSmall {
-                font-size: 40px;
-                line-height: 45px;
-                padding-left: 33px;
+                padding: 41px 32px;
             }
             @mixin atMedium {
-                font-size: 47px;
-                line-height: 45px;
-                padding-left: 0;
+                padding: 38px 0px;
             }
             @mixin atLarge {
-                font-size: 48px;
-                line-height: 64px;
-                padding-left: 0;
+                padding: 60px 165px;
             }
-        }
-        &_p {
-            text-align: center;
-            @mixin atSmall {
-                font-size: 19px;
-                line-height: 37px;
-            }
-            @mixin atMedium {
-                text-align: left;
-                font-size: 19px;
-                line-height: 37px;
-            }
-            @mixin atLarge {
-                font-size: 18px;
-                line-height: 32px;
-            }
-        }
-        /* <!-- Testimonial 1 --> */
-        &_1 {
-            position: absolute;
-            width: 280px;
-            height: 429px;
-            top: 177px;
-            margin-left: 21px;
-            background: #FFFFFF;
-            box-shadow: 0px 10px 20px rgb(41 41 42 / 7%);
-            border-radius: 8px;
-            @media (min-width: 530px) and (max-width: 1199px) {
-                position: absolute;
-                margin: auto;
-                left: 0;
-                right: 0;
-                top: 223px;
-                width: 350px;
-                height: 468px;
-                background: #FFFFFF;
-                box-shadow: 0px 10px 20px rgb(41 41 42 / 7%);
-                border-radius: 8px;
-            }
-            @mixin atLarge {
-                position: absolute;
-                margin-left: 0;
-                width: 350px;
-                height: 468px;
-                left: 353px;
-                top: 304px;
-            }
-            &_logo {
-                padding: 32px 32px;
-                @mixin atLarge {}
-            }
-            &_quote {
-                padding: 0 30px;
-                @mixin atLarge {}
-            }
-            &>p {
-                font-size: 17px;
-                line-height: 20px;
-                text-align: left;
-                font-weight: normal;
-                max-width: 254px;
-                margin: -13px 50px 24px 61px;
+            &>img {
+                width: 58px;
+                height: auto;
                 @mixin atSmall {
-                    font-size: 18px;
-                    line-height: 32px;
+                    width: 95px;
                 }
-            }
-            &>h4 {
-                text-align: left;
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 28px;
-                margin: 0px 50px 0px 61px;
-                @mixin atLarge {}
-            }
-            &>h5 {
-                text-align: left;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 24px;
-                color: #969BAB;
-                margin: 0px 50px 0px 61px;
-                @mixin atLarge {}
-            }
-        }
-        /* <!-- Testimonial 2 --> */
-        &_2 {
-            position: absolute;
-            width: 350px;
-            height: 310px;
-            top: 633px;
-            margin-left: -16px;
-            background: #FFFFFF;
-            box-shadow: 0px 10px 20px rgb(41 41 42 / 7%);
-            border-radius: 8px;
-            @media (min-width: 530px) and (max-width: 1199px) {
-                position: absolute;
-                margin: auto;
-                left: 0;
-                right: 0;
-                top: 716px;
-                width: 445px;
-                height: 340px;
-                background: #FFFFFF;
-                box-shadow: 0px 10px 20px rgb(41 41 42 / 7%);
-                border-radius: 8px;
-            }
-            @mixin atLarge {
-                width: 445px;
-                height: 340px;
-                left: 735px;
-                top: 168px;
-            }
-            &_logo {
-                padding: 32px 32px;
-                @mixin atLarge {}
-            }
-            &_quote {
-                padding: 0 30px;
+                @mixin atMedium {}
                 @mixin atLarge {
-                    padding: 0 30px;
+                    width: auto;
                 }
-            }
-            &>p {
-                font-size: 17px;
-                line-height: 20px;
-                text-align: left;
-                font-weight: normal;
-                max-width: 349px;
-                margin: -13px 50px 24px 61px;
-                @mixin atSmall {
-                    font-size: 18px;
-                    line-height: 32px;
-                }
-            }
-            &>h4 {
-                text-align: left;
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 28px;
-                margin: 0px 50px 0px 61px;
-                @mixin atLarge {}
-            }
-            &>h5 {
-                text-align: left;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 24px;
-                color: #969BAB;
-                margin: 0px 50px 0px 61px;
-                @mixin atLarge {}
-            }
-        }
-        /* <!-- Testimonial 3 --> */
-        &_3 {
-            position: absolute;
-            width: 350px;
-            height: 276px;
-            top: 973px;
-            margin-left: -16px;
-            background: #FFFFFF;
-            box-shadow: 0px 10px 20px rgb(41 41 42 / 7%);
-            border-radius: 8px;
-            @media (min-width: 530px) and (max-width: 1199px) {
-                position: absolute;
-                margin: auto;
-                left: 0;
-                right: 0;
-                top: 1084px;
-                width: 350px;
-                height: 276px;
-                background: #FFFFFF;
-                box-shadow: 0px 10px 20px rgb(41 41 42 / 7%);
-                border-radius: 8px;
-            }
-            @mixin atLarge {
-                position: absolute;
-                width: 350px;
-                height: 276px;
-                left: 735px;
-                top: 540px;
-                background: #FFFFFF;
-                box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
-                border-radius: 8px;
-                animation: animateHeart 3s linear 3s 5;
-            }
-            &_logo {
-                padding: 32px 32px;
-                @mixin atLarge {}
-            }
-            &_quote {
-                padding: 0 30px;
-                @mixin atLarge {}
-            }
-            &>p {
-                text-align: left;
-                font-weight: normal;
-                font-size: 18px;
-                line-height: 32px;
-                max-width: 254px;
-                margin: -13px 32px 24px 64px;
-                @mixin atLarge {}
-            }
-            &>h4 {
-                text-align: left;
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 28px;
-                margin: 0px 50px 0px 61px;
-                @mixin atLarge {}
-            }
-            &>h5 {
-                text-align: left;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 24px;
-                color: #969BAB;
-                margin: 0px 50px 0px 61px;
-                @mixin atLarge {}
             }
         }
     }
+    &_h2 {
+        text-align: left;
+        font-weight: 800;
+        font-size: 31px;
+        line-height: 35px;
+        @mixin atSmall {
+            font-size: 40px;
+            line-height: 45px;
+            padding-left: 33px;
+        }
+        @mixin atMedium {
+            font-size: 47px;
+            line-height: 45px;
+            padding-left: 0;
+        }
+        @mixin atLarge {
+            font-size: 48px;
+            line-height: 64px;
+            padding-left: 0;
+        }
+    }
+    &_p {
+        text-align: center;
+        @mixin atSmall {
+            font-size: 19px;
+            line-height: 37px;
+        }
+        @mixin atMedium {
+            text-align: left;
+            font-size: 19px;
+            line-height: 37px;
+        }
+        @mixin atLarge {
+            font-size: 18px;
+            line-height: 32px;
+        }
+    }
+    /* <!-- Testimonial 1 --> */
+    &_1 {
+        position: absolute;
+        width: 280px;
+        height: 429px;
+        top: 177px;
+        margin-left: 21px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 20px rgb(41 41 42 / 7%);
+        border-radius: 8px;
+        @media (min-width: 530px) and (max-width: 1199px) {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 223px;
+            width: 350px;
+            height: 468px;
+            background: #FFFFFF;
+            box-shadow: 0px 10px 20px rgb(41 41 42 / 7%);
+            border-radius: 8px;
+        }
+        @mixin atLarge {
+            position: absolute;
+            margin-left: 0;
+            width: 350px;
+            height: 468px;
+            left: 353px;
+            top: 304px;
+        }
+        &_logo {
+            padding: 32px 32px;
+            @mixin atLarge {}
+        }
+        &_quote {
+            padding: 0 30px;
+            @mixin atLarge {}
+        }
+        &>p {
+            font-size: 17px;
+            line-height: 20px;
+            text-align: left;
+            font-weight: normal;
+            max-width: 254px;
+            margin: -13px 50px 24px 61px;
+            @mixin atSmall {
+                font-size: 18px;
+                line-height: 32px;
+            }
+        }
+        &>h4 {
+            text-align: left;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 28px;
+            margin: 0px 50px 0px 61px;
+            @mixin atLarge {}
+        }
+        &>h5 {
+            text-align: left;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: #969BAB;
+            margin: 0px 50px 0px 61px;
+            @mixin atLarge {}
+        }
+    }
+    /* <!-- Testimonial 2 --> */
+    &_2 {
+        position: absolute;
+        width: 350px;
+        height: 310px;
+        top: 633px;
+        margin-left: -16px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 20px rgb(41 41 42 / 7%);
+        border-radius: 8px;
+        @media (min-width: 530px) and (max-width: 1199px) {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 716px;
+            width: 445px;
+            height: 340px;
+            background: #FFFFFF;
+            box-shadow: 0px 10px 20px rgb(41 41 42 / 7%);
+            border-radius: 8px;
+        }
+        @mixin atLarge {
+            width: 445px;
+            height: 340px;
+            left: 735px;
+            top: 168px;
+        }
+        &_logo {
+            padding: 32px 32px;
+            @mixin atLarge {}
+        }
+        &_quote {
+            padding: 0 30px;
+            @mixin atLarge {
+                padding: 0 30px;
+            }
+        }
+        &>p {
+            font-size: 17px;
+            line-height: 20px;
+            text-align: left;
+            font-weight: normal;
+            max-width: 349px;
+            margin: -13px 50px 24px 61px;
+            @mixin atSmall {
+                font-size: 18px;
+                line-height: 32px;
+            }
+        }
+        &>h4 {
+            text-align: left;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 28px;
+            margin: 0px 50px 0px 61px;
+            @mixin atLarge {}
+        }
+        &>h5 {
+            text-align: left;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: #969BAB;
+            margin: 0px 50px 0px 61px;
+            @mixin atLarge {}
+        }
+    }
+    /* <!-- Testimonial 3 --> */
+    &_3 {
+        position: absolute;
+        width: 350px;
+        height: 276px;
+        top: 973px;
+        margin-left: -16px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 20px rgb(41 41 42 / 7%);
+        border-radius: 8px;
+        @media (min-width: 530px) and (max-width: 1199px) {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 1084px;
+            width: 350px;
+            height: 276px;
+            background: #FFFFFF;
+            box-shadow: 0px 10px 20px rgb(41 41 42 / 7%);
+            border-radius: 8px;
+        }
+        @mixin atLarge {
+            position: absolute;
+            width: 350px;
+            height: 276px;
+            left: 735px;
+            top: 540px;
+            background: #FFFFFF;
+            box-shadow: 0px 10px 20px rgba(41, 41, 42, 0.07);
+            border-radius: 8px;
+            animation: animateHeart 3s linear 3s 5;
+        }
+        &_logo {
+            padding: 32px 32px;
+            @mixin atLarge {}
+        }
+        &_quote {
+            padding: 0 30px;
+            @mixin atLarge {}
+        }
+        &>p {
+            text-align: left;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 32px;
+            max-width: 254px;
+            margin: -13px 32px 24px 64px;
+            @mixin atLarge {}
+        }
+        &>h4 {
+            text-align: left;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 28px;
+            margin: 0px 50px 0px 61px;
+            @mixin atLarge {}
+        }
+        &>h5 {
+            text-align: left;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: #969BAB;
+            margin: 0px 50px 0px 61px;
+            @mixin atLarge {}
+        }
+    }
+}

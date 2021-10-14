@@ -12,6 +12,7 @@
         margin-left: auto;
         margin-right: auto;
     }
+    /* <!-- Main Headline and Big Image --> */
     &_main {
         display: flex;
         justify-content: space-around;
@@ -25,6 +26,8 @@
             margin-right: auto;
         }
     }
+    /*  <!-- Google,Microsoft Etc Logos --> */
+    /* <!-- Tailor-made Features --> */
     &_less {
         display: grid;
         /* overflow: hidden; */
@@ -33,6 +36,7 @@
             margin: 0 auto;
         }
     }
+    /* <!-- Real Stories from Real Customers --> */
     &_wide {
         max-width: 320px;
         margin-left: auto;
@@ -45,6 +49,7 @@
             max-width: 1440px;
         }
     }
+    /* (Statistics/Stats) */
     &_stats {
         @media (min-width: 530px) and (max-width: 1199px) {
             max-width: 530px;
